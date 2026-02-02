@@ -3,10 +3,10 @@ layout: home
 klass: home
 lang-ref: home
 permalink: /es/
-title: (es) Wild Moves
-description: (es) Animal tracking data portal
+title: Wild Moves
+description: Portal de datos de seguimiento de animales
 videos: ["/assets/images/eurodeer-02070010.mp4"]
-imageLicense: "(es) Red deer with a GPS collar in Trentino, Italy. Video by Fondazione Edmund Mach/Euromammals."
+imageLicense: "Ciervo rojo con un collar GPS en Trentino, Italia. Vídeo de la Fondazione Edmund Mach/Euromammals."
 height: 60vh
 composition:
   - type: heroVideo
@@ -14,38 +14,37 @@ composition:
     inlineData:
       features:
         - title: <span data-ajax-url="https://api.gbif.org/v1/dataset/search?networkKey=ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b">~350</span>
-          description: (es) Datasets
+          description: Conjuntos de datos
           href: /es/dataset/search
         - title: <span data-ajax-path="data.occurrenceSearch.cardinality.speciesKey" data-ajax-url="https://graphql.gbif.org/graphql?query=query{occurrenceSearch(predicate:{key:%22networkKey%22,type:equals,value:%22ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b%22}){_predicate%20cardinality{speciesKey}}}">~70</span>
-          description: (es) Species
+          description: Especies
           href: /es/occurrence/search?view=dashboard&layout=W1t7ImlkIjoiaG1sbHQiLCJwIjp7fSwidHJhbnNsYXRpb24iOiJkYXNoYm9hcmQudGF4YSIsInQiOiJ0YXhhIn1dXQ%3D%3D
         - title: <span data-ajax-url="https://api.gbif.org/v1/occurrence/search?networkKey=ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b&limit=0">~15,000,000</span>
-          description: (es) Occurrences
+          description: Registros
           href: /es/occurrence/search
   - type: split
     inlineData:
-      title: (es) Search for data
+      title: Buscar Conjuntos de datos
       description: >
-        (es) Wild Moves helps you discover animal tracking and bio-logging datasets published to [GBIF](https://www.gbif.org/es).
-        Search metadata to find datasets relevant to you.
-        Or dive into the occurrence data these datasets collectively contain.
+        Wild Moves te ayuda a descubrir conjuntos de datos de seguimiento de animales publicados en  [GBIF](https://www.gbif.org/es).
+        Busca metadatos para encontrar conjuntos de datos relevantes para ti.
+        O sumérgete en los datos de registros que estos conjuntos de datos contienen de manera colectiva.
       cta:
-        - text: (es) Explore metadata
+        - text: Explora los metadatos
           href: /es/dataset/search
-        - text: (es) Explore occurrences
+        - text: Buscar Registros
           href: /es/occurrence/search
       background: "{{ site.data.images.shark-tagging.src }}"
       imageLicense: "{{ site.data.images.shark-tagging.caption }}"
   - type: split
     inlineData:
-      title: (es) Make your data discoverable
+      title: Haz que tus datos sean fáiles de encontrar
       description: >
-        (es) Want others to discover your animal tracking data and use it for research and conservation?
-        Publish your dataset to [GBIF](https://www.gbif.org/es) and assign it
-        to the [Bio-logging network](https://www.gbif.org/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b/dataset)
-        and it will automatically appear on Wild Moves.
+        ¿Quieres que otros descubran tus datos de seguimiento de animales y los utilicen para la investigación y la conservación?
+        Publica tu conjunto de datos en [GBIF](https://www.gbif.org/es) y regístralo en la[Red de Bio-logging](https://www.gbif.org/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b/dataset)
+        y aparecerá automáticamente en Wild Moves.
       cta:
-        - text: (es) Become a publisher
+        - text: Conviértete en editor
           href: https://www.gbif.org/es/become-a-publisher
       background: "{{ site.data.images.gull.src }}"
       imageLicense: "{{ site.data.images.gull.caption }}"
@@ -53,7 +52,7 @@ composition:
   - type: floatingText
     inlineData:
       klass: hp
-      title: (es) Interested in camera trap data?
+      title: ¿Te interesan los datos de cámaras trampa?
       description: >
         [(es) Visit Wild Album](https://album.wildlabs.net/es/){:.button}
       hasWhiteText: true

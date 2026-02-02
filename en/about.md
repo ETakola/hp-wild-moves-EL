@@ -26,7 +26,7 @@ See the [GBIF API documentation](https://techdocs.gbif.org/en/openapi/) for deta
 
 ## Who's behind this?
 
-The idea for this website was suggested by members of the [International Bio-Logging Society](https://bio-logging.net/wg/data-standardisation/) and [Move BON](https://geobon.org/move-bon/). The site is hosted by [GBIF](https://www.gbif.org/hosted-portals) and maintained by [WILDLABS](https://wildlabs.net) and volunteers from the bio-logging community, in particular:
+The idea for this website was suggested by members of the [International Bio-Logging Society](https://bio-logging.net/wg/data-standardisation/) and [Move BON](https://geobon.org/move-bon/). The site is hosted by [GBIF](https://www.gbif.org/hosted-portals) and maintained by [WILDLABS](https://wildlabs.net) and volunteers from the animal tracking community, in particular:
 
 - [Peter Desmet](https://orcid.org/0000-0002-8442-8025)
 - [Francesca Cagnacci](https://orcid.org/0000-0002-4954-9980)

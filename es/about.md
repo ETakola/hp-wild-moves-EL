@@ -3,7 +3,7 @@ layout: heroImage
 klass: wildlabs
 lang-ref: about
 permalink: /es/about
-title: (es) About
+title: Acerda de
 background: "{{ site.data.images.receivers.src }}"
 imageLicense: "{{ site.data.images.receivers.caption }}"
 height: 60vh
@@ -11,22 +11,22 @@ parallax: true
 toc: true
 ---
 
-(es) Wild Moves highlights animal tracking data published through the [Global Biodiversity Information Facility (GBIF)](https://www.gbif.org/es). It allows users to find data that might fit their need and allows datasets owners to make their research more discoverable. All data use is subject to the [GBIF user agreement](https://www.gbif.org/es/terms/data-user).
+Wild Moves agrega datos de seguimiento de animales publicados a través del [Sistema Global de Información sobre Biodiversidad (GBIF)](https://www.gbif.org/es). Wild Moves permite a usuarios encontrar datos que puedan ajustarse a sus necesidades y a propietarios de conjuntos de datos a hacer que sus investigaciones sean más fáciles de encontrar. Todo uso de datos está sujeto al [acuerdo de usuario de GBIF](https://www.gbif.org/es/terms/data-user)
 
-## (es) Scope
+## Alcance
 
-(es) Any dataset that is published and registered with GBIF as belonging to the [Bio-logging network](https://www.gbif.org/es/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b) is automatically included in Wild Moves. Publication and registration can be do through e.g. a [GBIF IPT](https://www.gbif.org/ipt).
+Cualquier conjunto de datos publicado y registrado en GBIF como perteneciente a la [Red de Bio-logging](https://www.gbif.org/es/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b) es automáticamente incluido en Wild Moves. La publicación y el registro puede hacerse a través de, por ejemplo, un [IPT de GBIF](https://www.gbif.org/ipt).
 
-### (es) API access
+### Acceso a la API
 
-- (es) Datasets: <https://api.gbif.org/v1/dataset/search?networkKey=ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b>
-- (es) Occurrences: <https://api.gbif.org/v1/occurrence/search?networkKey=ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b>
+- Conjuntos de datos: <https://api.gbif.org/v1/dataset/search?networkKey=ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b>
+- Registros: <https://api.gbif.org/v1/occurrence/search?networkKey=ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b>
 
-(es) See the [GBIF API documentation](https://techdocs.gbif.org/en/openapi/) for details.
+Consulte la [documentación de la API de GBIF](https://techdocs.gbif.org/en/openapi/) para más  información.
 
-## (es) Who's behind this?
+## ¿Quiénes somos?
 
-(es) The idea for this website was suggested by members of the [International Bio-Logging Society](https://bio-logging.net/wg/data-standardisation/) and [Move BON](https://geobon.org/move-bon/). The site is hosted by [GBIF](https://www.gbif.org/es/hosted-portals) and maintained by [WILDLABS](https://wildlabs.net) and volunteers from the bio-logging community, in particular:
+La idea de este sitio web fue propuesta por miembros de la [International Bio-Logging Society](https://bio-logging.net/wg/data-standardisation/) y [Move BON](https://geobon.org/move-bon/). El sitio web esta alojado por [GBIF](https://www.gbif.org/es/hosted-portals) y mantenido por [WILDLABS](https://wildlabs.net) y voluntarios de la comunidad de seguimiento animal, en particular:
 
 - [Peter Desmet](https://orcid.org/0000-0002-8442-8025)
 - [Francesca Cagnacci](https://orcid.org/0000-0002-4954-9980)
@@ -35,8 +35,8 @@ toc: true
 - [Jon Pye](https://orcid.org/0000-0003-2807-5867)
 - [Talia Speaker](https://orcid.org/0000-0002-1274-2330)
 
-## (es) How can you contribute?
+## ¿Cómo puedes contribuir?
 
-(es) The best way to contribute to Wild Moves is by publishing your animal tracking data to GBIF and registering it with the `Bio-logging` network.
+La mejor manera de contribuir en Wild Moves es publicando tus datos de seguimiento de animales en GBIF y registrándolos en la red `Bio-logging`.
 
-(es) Have a suggestion or noticed a typo or bug? Submit an issue on [GitHub](https://github.com/gbif/hp-wild-moves/issues).
+¿Tienes alguna sugerencia o has notado un error tipográfico? Crea un Issue en [GitHub](https://github.com/gbif/hp-wild-moves/issues).

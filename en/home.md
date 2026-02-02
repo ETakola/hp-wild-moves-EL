@@ -26,7 +26,7 @@ composition:
     inlineData:
       title: Search for data
       description: >
-        Wild Moves helps you discover animal tracking and bio-logging datasets published to [GBIF](https://www.gbif.org).
+        Wild Moves helps you discover animal tracking datasets published to [GBIF](https://www.gbif.org).
         Search metadata to find datasets relevant to you.
         Or dive into the occurrence data these datasets collectively contain.
       cta:
