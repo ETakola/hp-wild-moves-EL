@@ -4,8 +4,8 @@ klass: wildlabs
 lang-ref: about
 permalink: /about
 title: About
-background: "{{ site.data.images.receivers.src }}"
-imageLicense: "{{ site.data.images.receivers.caption }}"
+background: /assets/images/otn-receivers-boat.jpg
+imageLicense: Acoustic receivers ready to be deployed off the coast of Nova Scotia, Canada. Image by the Ocean Tracking Network.
 height: 60vh
 parallax: true
 toc: true
