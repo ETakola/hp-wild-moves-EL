@@ -41,7 +41,7 @@ composition:
       title: Haz que tus datos sean fáiles de encontrar
       description: >
         ¿Quieres que otros descubran tus datos de seguimiento de animales y los utilicen para la investigación y la conservación?
-        Publica tu conjunto de datos en [GBIF](https://www.gbif.org/es) y regístralo en la[Red de Bio-logging](https://www.gbif.org/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b/dataset)
+        Publica tu conjunto de datos en [GBIF](https://www.gbif.org/es) y regístralo en la [Red de Bio-logging](https://www.gbif.org/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b/dataset)
         y aparecerá automáticamente en Wild Moves.
       cta:
         - text: Conviértete en editor
