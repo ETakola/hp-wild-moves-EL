@@ -34,8 +34,8 @@ composition:
           href: /dataset/search
         - text: Explore occurrences
           href: /occurrence/search
-      background: "{{ site.data.images.shark-tagging.src }}"
-      imageLicense: "{{ site.data.images.shark-tagging.caption }}"
+      background: /assets/images/otn-shark-tagging.jpg
+      imageLicense: Tagging a blue shark in Atlantic Canada. Image by the Ocean Tracking Network.
   - type: split
     inlineData:
       title: Make your data discoverable
@@ -47,8 +47,8 @@ composition:
       cta:
         - text: Become a publisher
           href: https://www.gbif.org/become-a-publisher   
-      background: "{{ site.data.images.gull.src }}"
-      imageLicense: "{{ site.data.images.gull.caption }}"
+      background: /assets/images/lbbg-73826.jpg
+      imageLicense: Lesser black-backed gull with a GPS tag in Belgium. Image by Misjel Decleer/VLIZ.
       reverse: true
   - type: floatingText
     inlineData:
