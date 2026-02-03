@@ -24,36 +24,36 @@ composition:
           href: /es/occurrence/search
   - type: split
     inlineData:
-      title: Buscar Conjuntos de datos
+      title: Búsqueda de conjuntos de datos
       description: >
-        Wild Moves te ayuda a descubrir conjuntos de datos de seguimiento de animales publicados en  [GBIF](https://www.gbif.org/es).
+        Wild Moves te ayuda a descubrir conjuntos de datos de seguimiento de animales y de bio-logging publicados en  [GBIF](https://www.gbif.org/es).
         Busca metadatos para encontrar conjuntos de datos relevantes para ti.
         O sumérgete en los datos de registros que estos conjuntos de datos contienen de manera colectiva.
       cta:
         - text: Explora los metadatos
           href: /es/dataset/search
-        - text: Buscar Registros
+        - text: Búsqueda de registros
           href: /es/occurrence/search
       background: /assets/images/otn-shark-tagging.jpg
-      imageLicense: (es) Tagging a blue shark in Atlantic Canada. Image by the Ocean Tracking Network.
+      imageLicense: MArcaje de un tiburón azul en la costa atlántica de Canadá. Imaged de la Ocean Tracking Network.
   - type: split
     inlineData:
-      title: Haz que tus datos sean fáiles de encontrar
+      title: Haz que tus datos sean fáciles de encontrar
       description: >
-        ¿Quieres que otros descubran tus datos de seguimiento de animales y los utilicen para la investigación y la conservación?
+        ¿Quieres que otros descubran tus datos de seguimiento de animales y los utilicen para investigación y conservación?
         Publica tu conjunto de datos en [GBIF](https://www.gbif.org/es) y regístralo en la [Red de Bio-logging](https://www.gbif.org/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b/dataset)
         y aparecerá automáticamente en Wild Moves.
       cta:
         - text: Conviértete en editor
           href: https://www.gbif.org/es/become-a-publisher
       background: /assets/images/lbbg-73826.jpg
-      imageLicense: (es) Lesser black-backed gull with a GPS tag in Belgium. Image by Misjel Decleer/VLIZ.
+      imageLicense: Gaviota sombría con un dispositivo GPS en Bélgica. Imagen de Misjel Decleer/VLIZ.
       reverse: true
   - type: floatingText
     inlineData:
       klass: hp
       title: ¿Te interesan los datos de cámaras trampa?
       description: >
-        [(es) Visit Wild Album](https://album.wildlabs.net/es/){:.button}
+        [Visita Wild Album](https://album.wildlabs.net/es/){:.button}
       hasWhiteText: true
 ---

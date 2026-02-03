@@ -2,5 +2,5 @@
 layout: occurrence
 lang-ref: occurrence/search
 permalink: /es/occurrence/search
-title: Buscar Registros
+title: Búsqueda de registros
 ---

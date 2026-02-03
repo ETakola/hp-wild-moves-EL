@@ -5,13 +5,13 @@ lang-ref: about
 permalink: /es/about
 title: Acerda de
 background: /assets/images/otn-receivers-boat.jpg
-imageLicense: (es) Acoustic receivers ready to be deployed off the coast of Nova Scotia, Canada. Image by the Ocean Tracking Network.
+imageLicense: Receptores acústicos listos para ser desplegados frente a la costa de Nueva Escocia, Canadá. Imagen de la Ocean Tracking Network.
 height: 60vh
 parallax: true
 toc: true
 ---
 
-Wild Moves agrega datos de seguimiento de animales publicados a través del [Sistema Global de Información sobre Biodiversidad (GBIF)](https://www.gbif.org/es). Wild Moves permite a usuarios encontrar datos que puedan ajustarse a sus necesidades y a propietarios de conjuntos de datos a hacer que sus investigaciones sean más fáciles de encontrar. Todo uso de datos está sujeto al [acuerdo de usuario de GBIF](https://www.gbif.org/es/terms/data-user)
+Wild Moves agrupa datos de seguimiento de animales publicados a través del [Sistema Global de Información sobre Biodiversidad (GBIF)](https://www.gbif.org/es). Wild Moves permite a usuarios encontrar datos que puedan ajustarse a sus necesidades y a propietarios de conjuntos de datos a hacer que sus investigaciones sean más fáciles de encontrar. Todo uso de datos está sujeto al [acuerdo de usuario de GBIF](https://www.gbif.org/es/terms/data-user)
 
 ## Alcance
 
