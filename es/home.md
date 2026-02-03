@@ -26,7 +26,7 @@ composition:
     inlineData:
       title: Búsqueda de conjuntos de datos
       description: >
-        Wild Moves te ayuda a descubrir conjuntos de datos de seguimiento de animales y de bio-logging publicados en  [GBIF](https://www.gbif.org/es).
+        Wild Moves te ayuda a descubrir conjuntos de datos de seguimiento de animales y de bio-logging publicados en [GBIF](https://www.gbif.org/es).
         Busca metadatos para encontrar conjuntos de datos relevantes para ti.
         O sumérgete en los datos de registros que estos conjuntos de datos contienen de manera colectiva.
       cta:
@@ -35,7 +35,7 @@ composition:
         - text: Búsqueda de registros
           href: /es/occurrence/search
       background: /assets/images/otn-shark-tagging.jpg
-      imageLicense: MArcaje de un tiburón azul en la costa atlántica de Canadá. Imaged de la Ocean Tracking Network.
+      imageLicense: Marcaje de un tiburón azul en la costa atlántica de Canadá. Imaged de la Ocean Tracking Network.
   - type: split
     inlineData:
       title: Haz que tus datos sean fáciles de encontrar
