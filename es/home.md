@@ -32,7 +32,7 @@ composition:
       cta:
         - text: Explora los metadatos
           href: /es/dataset/search
-        - text: Búsqueda de registros
+        - text: Explora los registros
           href: /es/occurrence/search
       background: /assets/images/otn-shark-tagging.jpg
       imageLicense: Marcaje de un tiburón azul en la costa atlántica de Canadá. Imaged de la Ocean Tracking Network.
