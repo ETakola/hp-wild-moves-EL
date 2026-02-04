@@ -22,7 +22,7 @@ Cualquier conjunto de datos publicado y registrado en GBIF como perteneciente a 
 - Conjuntos de datos: <https://api.gbif.org/v1/dataset/search?networkKey=ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b>
 - Registros: <https://api.gbif.org/v1/occurrence/search?networkKey=ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b>
 
-Consulte la [documentación de la API de GBIF](https://techdocs.gbif.org/en/openapi/) para más  información.
+Consulte la [documentación de la API de GBIF](https://techdocs.gbif.org/en/openapi/) para más información.
 
 ## ¿Quiénes somos?
 
