@@ -15,7 +15,7 @@ Wild Moves highlights animal tracking data published through the [Global Biodive
 
 ## Scope
 
-Any dataset that is published and registered with GBIF as belonging to the [Bio-logging network](https://www.gbif.org/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b) is automatically included in Wild Moves. Publication and registration can be do through e.g. a [GBIF IPT](https://www.gbif.org/ipt).
+Any dataset that is published and registered with GBIF as belonging to the [Wild Moves network](https://www.gbif.org/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b) is automatically included in Wild Moves. Publication and registration can be do through e.g. a [GBIF IPT](https://www.gbif.org/ipt).
 
 ### API access
 
@@ -37,6 +37,6 @@ The idea for this website was suggested by members of the [International Bio-Log
 
 ## How can you contribute?
 
-The best way to contribute to Wild Moves is by publishing your animal tracking data to GBIF and registering it with the `Bio-logging` network.
+The best way to contribute to Wild Moves is by publishing your animal tracking data to GBIF and registering it with the `Wild Moves` network.
 
 Have a suggestion or noticed a typo or bug? Submit an issue on [GitHub](https://github.com/gbif/hp-wild-moves/issues).

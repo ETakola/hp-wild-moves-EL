@@ -42,7 +42,7 @@ composition:
       description: >
         Want others to discover your animal tracking data and use it for research and conservation?
         Publish your dataset to [GBIF](https://www.gbif.org) and assign it
-        to the [Bio-logging network](https://www.gbif.org/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b/dataset)
+        to the [Wild Moves network](https://www.gbif.org/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b)
         and it will automatically appear on Wild Moves.
       cta:
         - text: Become a publisher
