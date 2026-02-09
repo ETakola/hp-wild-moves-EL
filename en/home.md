@@ -41,9 +41,9 @@ composition:
       title: Make your data discoverable
       description: >
         Want others to discover your animal tracking data and use it for research and conservation?
-        Publish your dataset to [GBIF](https://www.gbif.org) and assign it
+        Publish your dataset to [GBIF](https://www.gbif.org), assign it
         to the [Wild Moves network](https://www.gbif.org/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b)
-        and it will automatically appear on Wild Moves.
+        and it will automatically appear on this website.
       cta:
         - text: Become a publisher
           href: https://www.gbif.org/become-a-publisher   
