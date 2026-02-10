@@ -15,7 +15,7 @@ Wild Moves agrupa datos de seguimiento de animales publicados a través del [Sis
 
 ## Alcance
 
-Cualquier conjunto de datos publicado y registrado en GBIF como perteneciente a la [Red de Bio-logging](https://www.gbif.org/es/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b) es automáticamente incluido en Wild Moves. La publicación y el registro puede hacerse a través de, por ejemplo, un [IPT de GBIF](https://www.gbif.org/ipt).
+Cualquier conjunto de datos publicado y registrado en GBIF como perteneciente a la [Red de Wild Moves](https://www.gbif.org/es/network/ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b) es automáticamente incluido en Wild Moves. La publicación y el registro puede hacerse a través de, por ejemplo, un [IPT de GBIF](https://www.gbif.org/ipt).
 
 ### Acceso a la API
 
@@ -37,6 +37,6 @@ La idea de este sitio web fue propuesta por miembros de la [International Bio-Lo
 
 ## ¿Cómo puedes contribuir?
 
-La mejor manera de contribuir en Wild Moves es publicando tus datos de seguimiento de animales en GBIF y registrándolos en la red `Bio-logging`.
+La mejor manera de contribuir en Wild Moves es publicando tus datos de seguimiento de animales en GBIF y registrándolos en la red `Wild Moves`.
 
 ¿Tienes alguna sugerencia o has notado un error tipográfico? Crea un Issue en [GitHub](https://github.com/gbif/hp-wild-moves/issues).
