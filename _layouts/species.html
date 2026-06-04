@@ -1,0 +1,41 @@
+---
+layout: base
+---
+
+<style>
+  .feature {
+    flex: 0 0 250px;
+  }
+</style>
+
+{% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
+
+<section class="features">
+  <div class="feature-cards has-{{ taxa | size }}-elements">
+  {% for taxon in taxa %}
+    {% if taxon.imageSrc %}
+      <article class="feature">
+        <div class="feature-img">
+          <img src="{{ taxon.imageSrc }}">
+          <a class="feature-overlay" href="../occurrence/search?view=map&taxonKey={{ taxon.taxonKey }}"></a>
+          {% if taxon.imageBy %}
+            <div class="feature-img-license">
+              <div class="feature-img-license-c"><span class="icon"><i class="fa fa-info-circle"></i></span></div>
+              <div class="feature-img-license-text">
+                <p>Image by <a href="{{ taxon.imageUrl }}">{{ taxon.imageBy }}</a></p>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+        <div class="feature-content">
+          <div class="feature-text">
+            <a class="feature-overlay" href="../occurrence/search?view=map&taxonKey={{ taxon.taxonKey }}"></a>
+            <div class="feature-pre-title"><i>{{ taxon.species }}</i></div>
+            <h3 class="feature-title">{{ taxon.englishName }}</h3>
+          </div>
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+  </div>
+</section>
