@@ -15,7 +15,8 @@ layout: base
 <section class="features">
   <div class="feature-cards has-{{ taxa.size }}-elements">
     {% for taxon in taxa %}
-      <article class="feature" data-categories="{% for category in taxon.categories %}{{ category | strip }}|{% endfor %}">
+      {% assign categories = taxon.categories | split: ", " | sort %}
+      <article class="feature" data-categories="{% for category in categories %}{{ category | strip }}|{% endfor %}">
         {% assign preTitle = taxon.species %}
         {% assign title = taxon.englishName %}
         {% assign href = taxon.taxonKey | prepend: './occurrence/search?view=map&taxonKey=' %}
@@ -25,7 +26,7 @@ layout: base
         {% else %}
           {% assign imageLicense = false %}
         {%endif %}
-        {% include blocks/parts/feature.html content=taxon title=title preTitle=preTitle href=href background=background imageLicense=imageLicense %}
+        {% include blocks/parts/feature.html content=taxon title=title preTitle=preTitle href=href background=background imageLicense=imageLicense categories=categories %}
       </article>
     {% endfor %}
   </div>
