@@ -1,7 +1,7 @@
 # Supported languages
 en:
   label: English
-  archive_permalink: /news/
+  archive_permalink: /species
 es:
   label: Spanish
-  archive_permalink: /es/news/
+  archive_permalink: /es/species

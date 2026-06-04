@@ -11,10 +11,11 @@ layout: base
 {% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
 {% assign taxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" %}
 
+<div id="archive-filter" class="archive-filter"></div>
 <section class="features">
   <div class="feature-cards has-{{ taxa.size }}-elements">
     {% for taxon in taxa %}
-      <article class="feature">
+      <article class="feature" data-categories="{% for category in taxon.categories %}{{ category | strip }}|{% endfor %}">
         {% assign preTitle = taxon.species %}
         {% assign title = taxon.englishName %}
         {% assign href = taxon.taxonKey | prepend: './occurrence/search?view=map&taxonKey=' %}
@@ -29,3 +30,32 @@ layout: base
     {% endfor %}
   </div>
 </section>
+
+<script>
+  // Code adapted from https://github.com/gbif/jekyll-hp-base-theme/blob/master/_includes/footerScripts.html
+  // Filter cards on ?category=value
+  const urlParams = new URLSearchParams(window.location.search);
+    
+  if (urlParams.has("category") && urlParams.get("category") != "") {
+    var category = urlParams.get("category"); // Will return 1st category value + decode URI
+    
+    // Filter features
+    var features = document.querySelectorAll('.feature');
+    features.forEach(function(feature){
+      var cardCategories = feature.attributes['data-categories'].value.split('|').map(function(x){return x.trim();});
+      // Hide card if it does not contain the selected category
+      if (!cardCategories.includes(category)) {
+        feature.style.display = 'none';
+      }
+    });
+
+    // Show filter in top
+    var filterElement = document.getElementById('archive-filter');
+    if (filterElement) {
+      filterElement.innerHTML = '<div class="tags has-addons">' + 
+        '<a href="{{ page.permalink | relative_url }}" class="tag is-medium">' + category + '</a>' + 
+        '<a href="{{ page.permalink | relative_url }}" class="tag is-medium is-delete"></a>' +
+      '</div>'
+    }
+  }
+</script>
