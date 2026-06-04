@@ -9,6 +9,7 @@ layout: base
 </style>
 
 {% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
+{% assign taxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" %}
 
 <section class="features">
   <div class="feature-cards has-{{ taxa.size }}-elements">
