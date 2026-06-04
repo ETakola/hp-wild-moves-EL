@@ -11,31 +11,20 @@ layout: base
 {% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
 
 <section class="features">
-  <div class="feature-cards has-{{ taxa | size }}-elements">
-  {% for taxon in taxa %}
-    {% if taxon.imageSrc %}
+  <div class="feature-cards has-{{ taxa.size }}-elements">
+    {% for taxon in taxa %}
       <article class="feature">
-        <div class="feature-img">
-          <img src="{{ taxon.imageSrc }}">
-          <a class="feature-overlay" href="../occurrence/search?view=map&taxonKey={{ taxon.taxonKey }}"></a>
-          {% if taxon.imageBy %}
-            <div class="feature-img-license">
-              <div class="feature-img-license-c"><span class="icon"><i class="fa fa-info-circle"></i></span></div>
-              <div class="feature-img-license-text">
-                <p>Image by <a href="{{ taxon.imageUrl }}">{{ taxon.imageBy }}</a></p>
-              </div>
-            </div>
-          {% endif %}
-        </div>
-        <div class="feature-content">
-          <div class="feature-text">
-            <a class="feature-overlay" href="../occurrence/search?view=map&taxonKey={{ taxon.taxonKey }}"></a>
-            <div class="feature-pre-title"><i>{{ taxon.species }}</i></div>
-            <h3 class="feature-title">{{ taxon.englishName }}</h3>
-          </div>
-        </div>
+        {% assign preTitle = taxon.species %}
+        {% assign title = taxon.englishName %}
+        {% assign href = taxon.taxonKey | prepend: './occurrence/search?view=map&taxonKey=' %}
+        {% assign background = taxon.imageSrc %}
+        {% if taxon.imageBy %}
+          {% assign imageLicense = 'Image by [' | append: taxon.imageBy | append: '](' | append: taxon.imageUrl | append: ')' %}
+        {% else %}
+          {% assign imageLicense = false %}
+        {%endif %}
+        {% include blocks/parts/feature.html content=taxon title=title preTitle=preTitle href=href background=background imageLicense=imageLicense %}
       </article>
-    {% endif %}
-  {% endfor %}
+    {% endfor %}
   </div>
 </section>
