@@ -5,3 +5,94 @@ taxonKey,species,englishName,imageSrc,imageUrl,imageBy,license,numberOfOccurrenc
 7788295,Haematopus ostralegus,Eurasian Oystercatcher,https://inaturalist-open-data.s3.amazonaws.com/photos/1039273/large.jpg,https://www.inaturalist.org/observations/823427,Brian Gratwicke,cc-by,1038140
 8215487,Salmo trutta,Brown Trout,https://inaturalist-open-data.s3.amazonaws.com/photos/153521117/large.jpg,https://www.inaturalist.org/observations/92696622,Olly Morgan,cc0,931959
 2333785,Myoxocephalus scorpius,Shorthorn Sculpin,https://inaturalist-open-data.s3.amazonaws.com/photos/398763231/large.jpeg,https://www.inaturalist.org/observations/224955938,Kian Hayles-Cotton,cc0,775533
+2226639,Chionoecetes opilio,Snow Crab,https://inaturalist-open-data.s3.amazonaws.com/photos/31353551/large.jpg,https://www.inaturalist.org/observations/20307202,Georgy Vinogradov,cc-by,691379
+2474950,Grus grus,Common Crane,https://inaturalist-open-data.s3.amazonaws.com/photos/227565252/large.jpg,https://www.inaturalist.org/observations/133585813,Vsevolod Rudyi,cc-by,358712
+5972004,Homarus americanus,American Lobster,https://inaturalist-open-data.s3.amazonaws.com/photos/31318271/large.jpg,https://www.inaturalist.org/observations/20286880,Bob Semple,cc-by-nc,348434
+5212973,Anguilla anguilla,European Eel,https://inaturalist-open-data.s3.amazonaws.com/photos/316049128/large.jpeg,https://www.inaturalist.org/observations/181365760,Nicola Crockford,cc-by,330949
+2333802,Myoxocephalus octodecemspinosus,Longhorn Sculpin,https://inaturalist-open-data.s3.amazonaws.com/photos/374555081/large.jpeg,https://www.inaturalist.org/observations/211920189,Lara Gibson,cc0,325330
+4284021,Salvelinus alpinus,Arctic Char,https://inaturalist-open-data.s3.amazonaws.com/photos/256781750/large.jpeg,https://www.inaturalist.org/observations/149052430,Игорь Загребин,cc0,320271
+2402120,Acipenser fulvescens,Lake Sturgeon,https://inaturalist-open-data.s3.amazonaws.com/photos/522174507/large.jpg,https://www.inaturalist.org/observations/290276856,Below Blue Water Diver,cc-by-nc,291762
+7595433,Salmo salar,Atlantic Salmon,https://inaturalist-open-data.s3.amazonaws.com/photos/555838239/large.jpg,https://www.inaturalist.org/observations/308109504,v_moss,cc-by-nc,276059
+2480482,Circus aeruginosus,Western Marsh Harrier,https://inaturalist-open-data.s3.amazonaws.com/photos/121481252/large.jpg,https://www.inaturalist.org/observations/74337384,Artem Kuznetsov,cc-by,261473
+2394612,Morone saxatilis,Striped Bass,https://inaturalist-open-data.s3.amazonaws.com/photos/170972334/large.jpg,https://www.inaturalist.org/observations/102298548,Christian Back,cc0,225383
+8151548,Ichthyaetus melanocephalus,Mediterranean Gull,https://inaturalist-open-data.s3.amazonaws.com/photos/76875465/large.png,https://www.inaturalist.org/observations/48448425,Paolo Zucca,cc-by,205983
+2402122,Acipenser transmontanus,White Sturgeon,https://inaturalist-open-data.s3.amazonaws.com/photos/627931068/large.jpg,https://www.inaturalist.org/observations/344614581,mlyons7,cc-by-nc,202817
+2480509,Aquila clanga,Greater Spotted Eagle,https://inaturalist-open-data.s3.amazonaws.com/photos/460444126/large.jpg,https://www.inaturalist.org/observations/256765220,cog2022,cc-by-nc,141656
+2481909,Ciconia nigra,Black Stork,https://inaturalist-open-data.s3.amazonaws.com/photos/627006478/large.jpg,https://www.inaturalist.org/observations/344140448,Darren Obbard,cc-by,108179
+5202525,Ictalurus furcatus,Blue Catfish,https://inaturalist-open-data.s3.amazonaws.com/photos/417341337/large.jpeg,https://www.inaturalist.org/observations/234718340,gwen2012,cc-by-nc,106865
+2480449,Haliaeetus albicilla,White-tailed Eagle,https://inaturalist-open-data.s3.amazonaws.com/photos/512049225/large.jpg,https://www.inaturalist.org/observations/284898437,Wolfgang Bettighofer,cc-by-nc,98231
+2480801,Platalea leucorodia,Eurasian Spoonbill,https://inaturalist-open-data.s3.amazonaws.com/photos/510417211/large.jpg,https://www.inaturalist.org/observations/284036721,Meike Pa,cc-by-nc,94975
+5204024,Oncorhynchus tshawytscha,Chinook Salmon,https://inaturalist-open-data.s3.amazonaws.com/photos/330188705/large.jpeg,https://www.inaturalist.org/observations/188623212,sfreeman7,cc-by-nc,93425
+2480495,Circus pygargus,Montagu's Harrier,https://inaturalist-open-data.s3.amazonaws.com/photos/658135904/large.jpg,https://www.inaturalist.org/observations/360668298,Roman Gunchin,cc-by-nc,86257
+2480505,Aquila pomarina,Lesser Spotted Eagle,https://inaturalist-open-data.s3.amazonaws.com/photos/300371533/large.jpeg,https://www.inaturalist.org/observations/172988389,zametnya,cc-by-nc,79449
+5204039,Oncorhynchus nerka,Sockeye Salmon,https://inaturalist-open-data.s3.amazonaws.com/photos/580724257/large.jpg,https://www.inaturalist.org/observations/321133215,Spencer Hurt,cc-by,64175
+2480726,Pandion haliaetus,Osprey,https://inaturalist-open-data.s3.amazonaws.com/photos/185494513/large.jpeg,https://www.inaturalist.org/observations/110002552,Leonardo Hernández Escudero,cc-by-nc,64146
+2481792,Numenius arquata,Eurasian Curlew,https://inaturalist-open-data.s3.amazonaws.com/photos/149829117/large.jpg,https://www.inaturalist.org/observations/90641853,alexey_nesmelov,cc-by-nc,62960
+5216368,Squalus acanthias,Spiny Dogfish,https://inaturalist-open-data.s3.amazonaws.com/photos/227069143/large.jpeg,https://www.inaturalist.org/observations/133317082,whale_nerd,cc-by-nc,58976
+2480537,Buteo buteo,Common Buzzard,https://inaturalist-open-data.s3.amazonaws.com/photos/334076359/large.jpg,https://www.inaturalist.org/observations/190551903,Davide Diana,cc-by-nc,54590
+2409218,Hippoglossus hippoglossus,Atlantic Halibut,https://inaturalist-open-data.s3.amazonaws.com/photos/196509256/large.jpg,https://www.inaturalist.org/observations/116414403,Vsevolod Rudyi,cc-by,52274
+5204034,Oncorhynchus kisutch,Coho Salmon,https://inaturalist-open-data.s3.amazonaws.com/photos/447621235/large.jpeg,https://www.inaturalist.org/observations/250300222,KDyke,cc-by-nc,48496
+2480487,Circus cyaneus,Hen Harrier,https://inaturalist-open-data.s3.amazonaws.com/photos/434827233/large.jpg,https://www.inaturalist.org/observations/243825095,Vladimir Bryukhov,cc-by-nc,43011
+5212956,Anguilla rostrata,American Eel,https://inaturalist-open-data.s3.amazonaws.com/photos/63219231/large.jpeg,https://www.inaturalist.org/observations/39822847,,cc-by-nc,41816
+2374149,Scomber scombrus,Atlantic Mackerel,https://inaturalist-open-data.s3.amazonaws.com/photos/211801786/large.jpg,https://www.inaturalist.org/observations/124927131,,cc-by-nc,36884
+4287132,Acipenser oxyrinchus,Atlantic Sturgeon,https://inaturalist-open-data.s3.amazonaws.com/photos/158152739/large.jpg,https://www.inaturalist.org/observations/95278061,,cc-by-nc,36272
+2412740,Alosa pseudoharengus,Alewife,https://inaturalist-open-data.s3.amazonaws.com/photos/107690224/large.jpg,https://www.inaturalist.org/observations/66757912,,cc-by-nc,27863
+8351946,Clupea harengus,Atlantic Herring,https://inaturalist-open-data.s3.amazonaws.com/photos/370025857/large.jpg,https://www.inaturalist.org/observations/209104292,,cc-by-nc,25785
+2390185,Siganus rivulatus,Rivulated Rabbitfish,https://inaturalist-open-data.s3.amazonaws.com/photos/430342190/large.jpg,https://www.inaturalist.org/observations/241461222,Pauline Rico,cc-by-nc,25521
+2434791,Phoca largha,Spotted Seal,https://inaturalist-open-data.s3.amazonaws.com/photos/183630223/large.jpeg,https://www.inaturalist.org/observations/109000754,Валерия Ковалева,cc-by,24977
+5204019,Oncorhynchus mykiss,Columbia River Redband Trout,https://inaturalist-open-data.s3.amazonaws.com/photos/226043203/large.jpg,https://www.inaturalist.org/observations/132760733,,cc-by-nc,23776
+2480910,Botaurus stellaris,Eurasian Bittern,https://inaturalist-open-data.s3.amazonaws.com/photos/585540946/large.jpg,https://www.inaturalist.org/observations/323590888,Vladislav Iopek,cc-by-nc,23402
+5863764,Metacarcinus magister,Dungeness Crab,https://inaturalist-open-data.s3.amazonaws.com/photos/63867685/large.jpeg,https://www.inaturalist.org/observations/40206596,Ben Zerante,cc-by-nc,17881
+2417940,Prionace glauca,Blue Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/220488434/large.jpeg,https://www.inaturalist.org/observations/129721590,Frederico Almada,cc-by-nc,14894
+1010610,Limulus polyphemus,Atlantic Horseshoe Crab,https://inaturalist-open-data.s3.amazonaws.com/photos/173778952/large.jpg,https://www.inaturalist.org/observations/103781676,Rigel Nava,cc-by-nc,14401
+2434810,Histriophoca fasciata,Ribbon Seal,https://inaturalist-open-data.s3.amazonaws.com/photos/11319079/large.jpeg,https://www.inaturalist.org/observations/8486729,,cc-by-nc,10849
+2337607,Silurus glanis,Wels Catfish,https://inaturalist-open-data.s3.amazonaws.com/photos/216296689/large.jpg,https://www.inaturalist.org/observations/127414729,,cc-by-nc,10378
+5215777,Rhinoptera bonasus,Cownose Ray,https://inaturalist-open-data.s3.amazonaws.com/photos/345595201/large.jpeg,https://www.inaturalist.org/observations/196316814,bryndevon404,cc-by-nc,9942
+2412708,Alosa aestivalis,Blueback Shad,https://inaturalist-open-data.s3.amazonaws.com/photos/286735362/large.jpeg,https://www.inaturalist.org/observations/165634438,,cc-by-nc,9551
+4286975,Cyprinus carpio,European Carp,https://inaturalist-open-data.s3.amazonaws.com/photos/2754663/large.JPG,https://www.inaturalist.org/observations/2461905,,cc-by-nc,9446
+2418036,Carcharhinus leucas,Bull Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/323478792/large.jpg,https://www.inaturalist.org/observations/185236225,Pablo A. Arias Cid,cc-by-nc,8846
+2434816,Erignathus barbatus,Bearded Seal,https://inaturalist-open-data.s3.amazonaws.com/photos/309399899/large.jpg,https://www.inaturalist.org/observations/177862083,Sebastián Lescano,cc-by-nc,6984
+2442225,Chelonia mydas,Green Sea Turtle,https://inaturalist-open-data.s3.amazonaws.com/photos/222581734/large.jpg,https://www.inaturalist.org/observations/130847742,bradenrice13,cc-by-nc,6957
+2418771,Paragaleus pectoralis,Atlantic Weasel Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/304095379/large.jpeg,https://www.inaturalist.org/observations/175001093,,cc-by-nc,6097
+2440440,Pseudorca crassidens,False Killer Whale,https://inaturalist-open-data.s3.amazonaws.com/photos/167153562/large.jpg,https://www.inaturalist.org/observations/100173317,fernando_elorriaga,cc-by-nc,5774
+2391729,Rachycentron canadum,Cobia,https://inaturalist-open-data.s3.amazonaws.com/photos/529527003/large.jpg,https://www.inaturalist.org/observations/294201524,,cc-by-nc,5638
+2421365,Lampetra fluviatilis,European River Lamprey,https://inaturalist-open-data.s3.amazonaws.com/photos/492846946/large.jpeg,https://www.inaturalist.org/observations/274114540,,cc-by-nc,5577
+2481912,Ciconia ciconia,European White Stork,https://inaturalist-open-data.s3.amazonaws.com/photos/593174925/large.jpg,https://www.inaturalist.org/observations/327419069,Tim Taslimi,cc-by-nc,4461
+2394604,Morone americana,White Perch,https://inaturalist-open-data.s3.amazonaws.com/photos/209801095/large.jpg,https://www.inaturalist.org/observations/123818203,,cc-by-nc,4396
+2365685,Squalius cephalus,European Chub,https://inaturalist-open-data.s3.amazonaws.com/photos/401038364/large.jpg,https://www.inaturalist.org/observations/226146898,,cc-by-nc,4261
+2351271,Salvelinus fontinalis,Brook Trout,https://inaturalist-open-data.s3.amazonaws.com/photos/242646325/large.jpg,https://www.inaturalist.org/observations/211499360,Bruce Deagle,cc-by,3855
+2497295,Asio flammeus,Short-eared Owl,https://inaturalist-open-data.s3.amazonaws.com/photos/344405593/large.jpg,https://www.inaturalist.org/observations/195724174,pkondrashov,cc-by-nc,3784
+2225646,Callinectes sapidus,Atlantic Blue Crab,https://inaturalist-open-data.s3.amazonaws.com/photos/226510112/large.jpg,https://www.inaturalist.org/observations/133016863,chantel_pence,cc-by-nc,3346
+2351209,Coregonus huntsmani,Atlantic Whitefish,https://inaturalist-open-data.s3.amazonaws.com/photos/29564925/large.jpeg,https://www.inaturalist.org/observations/19243337,Ian Manning,cc-by,3310
+2409330,Platichthys flesus,European Flounder,https://inaturalist-open-data.s3.amazonaws.com/photos/84144698/large.jpg,https://inaturalist-open-data.s3.amazonaws.com/photos/84144698/large.jpg,charlienaysmith,cc-by-nc,2804
+2420600,Notorynchus cepedianus,Broadnose Sevengill Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/15570417/large.jpg,https://www.inaturalist.org/observations/11036668,rowanwattpringle,cc-by-nc,2789
+5229165,Aegypius monachus,Cinereous Vulture,https://inaturalist-open-data.s3.amazonaws.com/photos/547875364/large.jpg,https://www.inaturalist.org/observations/303944080,Сергей,cc-by-nc,2450
+2420694,Carcharodon carcharias,Great White Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/10571121/large.jpg,https://www.inaturalist.org/observations/7991617,stephencoutts,cc-by-nc,2029
+5216239,Lamna nasus,Porbeagle,https://inaturalist-open-data.s3.amazonaws.com/photos/261649646/large.jpg,https://www.inaturalist.org/observations/151628207,mumudu,cc-by-nc,1814
+2418005,Carcharhinus obscurus,Dusky Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/10584611/large.jpg,https://www.inaturalist.org/observations/8000290,stephencoutts,cc-by-nc,1649
+2418234,Galeocerdo cuvier,Tiger Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/174032335/large.jpeg,https://www.inaturalist.org/observations/103910661,Sylvain Le Bris,cc-by-nc,1582
+2435270,Acinonyx jubatus,Cheetah,https://inaturalist-open-data.s3.amazonaws.com/photos/175608470/large.jpeg,https://www.inaturalist.org/observations/104758896,Justin Ponder,cc-by,1190
+2359706,Rutilus rutilus,Common Roach,https://inaturalist-open-data.s3.amazonaws.com/photos/523855041/large.jpg,https://www.inaturalist.org/observations/291170776,michal_michlewicz,cc-by-nc,1037
+2417495,Ginglymostoma cirratum,Nurse Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/439764980/large.jpeg,https://www.inaturalist.org/observations/246346292,CONANP_Reserva de la Biosfera Banco Chinchorro,cc-by-nc,1035
+2391092,Lichia amia,Leerfish,https://inaturalist-open-data.s3.amazonaws.com/photos/190268220/large.jpg,https://www.inaturalist.org/observations/112637919,Roberto Pillon,cc-by-nc,496
+5711980,Oncorhynchus clarkii,Coastal Cutthroat Trout,,,,,493
+4284020,Salvelinus malma,Dolly Varden,,,,,460
+9245001,Hypanus sabinus,Atlantic Stingray,,,,,388
+2434793,Phoca vitulina,Harbor Seal,,,,,318
+2418312,Mustelus canis,Dusky Smooth-Hound,,,,,284
+2440605,Globicephala macrorhynchus,Short-finned Pilot Whale,,,,,277
+2417983,Carcharhinus brevipinna,Spinner Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/141413830/large.jpg,https://www.inaturalist.org/observations/85898648,Niall Perrins,cc-by-nc,223
+8006460,Anarhichas lupus,Atlantic Wolffish,,,,,120
+2420446,Amblyraja radiata,Thorny Skate,,,,,104
+5208090,Pomatomus saltatrix,Bluefish,,,,,92
+2351244,Salvelinus confluentus,Bull Trout,,,,,89
+2440403,Mesoplodon densirostris,Dense-beaked Whale,,,,,71
+2415853,Gadus macrocephalus,Pacific Cod,,,,,50
+2417970,Carcharhinus limbatus,Common Blacktip Shark,,,,,48
+2415893,Microgadus tomcod,Atlantic Tomcod,,,,,42
+8236498,Petromyzon marinus,Sea Lamprey,,,,,22
+2382906,Pomadasys commersonnii,Small-spotted Grunter,,,,,20
+2409370,Parophrys vetulus,English Sole,,,,,14
+2373980,Thunnus thynnus,Atlantic Bluefin Tuna,,,,,3
+2374268,Scomberomorus maculatus,Atlantic Spanish Mackerel,,,,,2
+2417919,Negaprion brevirostris,Lemon Shark,,,,,2
