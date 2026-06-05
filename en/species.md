@@ -1,11 +1,10 @@
 ---
 layout: species
+klass: species
 lang-ref: species
 permalink: /species
 title: Species
-height: 40vh
 toc: false
 ---
 
-<!-- Content here will be not be displayed -->
-
+Curated list of species with tracking data on this website (ordered by number of occurrences).

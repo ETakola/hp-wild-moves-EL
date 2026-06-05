@@ -1,41 +1,50 @@
 ---
 layout: base
+composition:
+  - type: pageMarkdown
 ---
 
-<style>
-  .feature {
-    flex: 0 0 250px;
-  }
-</style>
-
+{% assign composition = page.composition | default: layout.composition %}
+{% include composition.html composition=composition %}
 {% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
+{% assign filteredTaxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" | where_exp: "taxon", "taxon.numberOfOccurrences != '0'" %}
+{% assign groupedTaxa = filteredTaxa | group_by: "group" | sort: "name" %}
+{% assign groupNames = groupedTaxa | map: "name" %}
 
 <section class="features">
-  <div class="feature-cards has-{{ taxa | size }}-elements">
-  {% for taxon in taxa %}
-    {% if taxon.imageSrc %}
-      <article class="feature">
-        <div class="feature-img">
-          <img src="{{ taxon.imageSrc }}">
-          <a class="feature-overlay" href="../occurrence/search?view=map&taxonKey={{ taxon.taxonKey }}"></a>
-          {% if taxon.imageBy %}
-            <div class="feature-img-license">
-              <div class="feature-img-license-c"><span class="icon"><i class="fa fa-info-circle"></i></span></div>
-              <div class="feature-img-license-text">
-                <p>Image by <a href="{{ taxon.imageUrl }}">{{ taxon.imageBy }}</a></p>
-              </div>
-            </div>
-          {% endif %}
-        </div>
-        <div class="feature-content">
-          <div class="feature-text">
-            <a class="feature-overlay" href="../occurrence/search?view=map&taxonKey={{ taxon.taxonKey }}"></a>
-            <div class="feature-pre-title"><i>{{ taxon.species }}</i></div>
-            <h3 class="feature-title">{{ taxon.englishName }}</h3>
-          </div>
-        </div>
-      </article>
-    {% endif %}
-  {% endfor %}
+  <div class="features-intro">
+    <div class="feature-content">
+      <div class="feature-text">
+        {% for name in groupNames %}
+          <a class="button" href="#{{ name | downcase }}">{{ name }}</a>
+        {% endfor %}
+      </div>
+    </div>
   </div>
+
+  {% for group in groupedTaxa %}
+  <div class="features-intro" id="{{ group.name | downcase }}">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h3 class="feature-title">{{ group.name }} <span class="g-text-slate-400">({{ group.size }})</span></h3>
+      </div>
+    </div>
+  </div>
+  <div class="feature-cards has-{{ group.size }}-elements">
+    {% for taxon in group.items %}
+      <article class="feature" id="{{ taxon.species | strip }}">
+        {% assign preTitle = taxon.species %}
+        {% assign title = taxon.englishName %}
+        {% assign href = taxon.taxonKey | prepend: './occurrence/search?view=map&taxonKey=' %}
+        {% assign background = taxon.imageSrc %}
+        {% if taxon.imageBy %}
+          {% assign imageLicense = 'Image by [' | append: taxon.imageBy | append: '](' | append: taxon.imageUrl | append: ')' %}
+        {% else %}
+          {% assign imageLicense = false %}
+        {%endif %}
+        {% include blocks/parts/feature.html content=taxon preTitle=preTitle title=title href=href background=background imageLicense=imageLicense %}
+      </article>
+    {% endfor %}
+  </div>
+  {% endfor %}
 </section>
