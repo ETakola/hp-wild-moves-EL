@@ -7,7 +7,8 @@ composition:
 {% assign composition = page.composition | default: layout.composition %}
 {% include composition.html composition=composition %}
 {% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
-{% assign groupedTaxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" | group_by: "group" | sort: "name" %}
+{% assign filteredTaxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" | where_exp: "taxon", "taxon.numberOfOccurrences != '0'" %}
+{% assign groupedTaxa = filteredTaxa | group_by: "group" | sort: "name" %}
 {% assign groupNames = groupedTaxa | map: "name" %}
 
 <section class="features">
