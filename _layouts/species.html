@@ -4,18 +4,13 @@ composition:
   - type: pageMarkdown
 ---
 
-<style>
-  .feature {
-    flex: 0 0 250px;
-  }
-</style>
-
 {% assign composition = page.composition | default: layout.composition %}
 {% include composition.html composition=composition %}
 {% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
 {% assign taxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" %}
 
 <div id="archive-filter" class="archive-filter"></div>
+
 <section class="features">
   <div class="feature-cards has-{{ taxa.size }}-elements">
     {% for taxon in taxa %}
@@ -35,6 +30,15 @@ composition:
     {% endfor %}
   </div>
 </section>
+
+<style>
+  .article {
+    margin: 2rem auto;
+  }
+  .feature {
+    flex: 0 0 250px;
+  }
+</style>
 
 <script>
   // Code adapted from https://github.com/gbif/jekyll-hp-base-theme/blob/master/_includes/footerScripts.html
