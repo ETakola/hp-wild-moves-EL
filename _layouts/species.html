@@ -7,15 +7,21 @@ composition:
 {% assign composition = page.composition | default: layout.composition %}
 {% include composition.html composition=composition %}
 {% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
-{% assign taxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" %}
-
-<div id="archive-filter" class="archive-filter"></div>
+{% assign groupedTaxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" | group_by: "group" | sort: "name" %}
+{% assign groupNames = groupedTaxa | map: "name" %}
 
 <section class="features">
-  <div class="feature-cards has-{{ taxa.size }}-elements">
-    {% for taxon in taxa %}
-      {% assign categories = taxon.categories | split: ", " | sort %}
-      <article class="feature" data-categories="{% for category in categories %}{{ category | strip }}|{% endfor %}">
+  {% for group in groupedTaxa %}
+  <div class="features-intro" id="{{ group.name | downcase }}">
+    <div class="feature-content">
+      <div class="feature-text">
+        <h3 class="feature-title">{{ group.name }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="feature-cards has-{{ group.size }}-elements">
+    {% for taxon in group.items %}
+      <article class="feature" id="{{ taxon.species | strip }}">
         {% assign preTitle = taxon.species %}
         {% assign title = taxon.englishName %}
         {% assign href = taxon.taxonKey | prepend: './occurrence/search?view=map&taxonKey=' %}
@@ -25,10 +31,11 @@ composition:
         {% else %}
           {% assign imageLicense = false %}
         {%endif %}
-        {% include blocks/parts/feature.html content=taxon title=title preTitle=preTitle href=href background=background imageLicense=imageLicense categories=categories %}
+        {% include blocks/parts/feature.html content=taxon preTitle=preTitle title=title href=href background=background imageLicense=imageLicense %}
       </article>
     {% endfor %}
   </div>
+  {% endfor %}
 </section>
 
 <style>
@@ -39,32 +46,3 @@ composition:
     flex: 0 0 250px;
   }
 </style>
-
-<script>
-  // Code adapted from https://github.com/gbif/jekyll-hp-base-theme/blob/master/_includes/footerScripts.html
-  // Filter cards on ?category=value
-  const urlParams = new URLSearchParams(window.location.search);
-    
-  if (urlParams.has("category") && urlParams.get("category") != "") {
-    var category = urlParams.get("category"); // Will return 1st category value + decode URI
-    
-    // Filter features
-    var features = document.querySelectorAll('.feature');
-    features.forEach(function(feature){
-      var cardCategories = feature.attributes['data-categories'].value.split('|').map(function(x){return x.trim();});
-      // Hide card if it does not contain the selected category
-      if (!cardCategories.includes(category)) {
-        feature.style.display = 'none';
-      }
-    });
-
-    // Show filter in top
-    var filterElement = document.getElementById('archive-filter');
-    if (filterElement) {
-      filterElement.innerHTML = '<div class="tags has-addons">' + 
-        '<a href="{{ page.permalink | relative_url }}" class="tag is-medium">' + category + '</a>' + 
-        '<a href="{{ page.permalink | relative_url }}" class="tag is-medium is-delete"></a>' +
-      '</div>'
-    }
-  }
-</script>
