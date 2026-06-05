@@ -1,6 +1,5 @@
 ---
 layout: species
-klass: wildlabs
 lang-ref: species
 permalink: /species
 title: Species
