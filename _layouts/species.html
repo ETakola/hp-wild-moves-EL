@@ -1,5 +1,7 @@
 ---
 layout: base
+composition:
+  - type: pageMarkdown
 ---
 
 <style>
@@ -8,6 +10,8 @@ layout: base
   }
 </style>
 
+{% assign composition = page.composition | default: layout.composition %}
+{% include composition.html composition=composition %}
 {% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
 {% assign taxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" %}
 
