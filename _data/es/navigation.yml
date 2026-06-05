@@ -1,5 +1,7 @@
 # Links listed below will be included in your site's navbar (navigation at the top)
 
+- text: Especies
+  href: /es/species
 - text: Conjuntos de datos
   href: /es/dataset/search
 - text: Registros
