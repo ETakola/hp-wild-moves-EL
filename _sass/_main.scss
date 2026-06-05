@@ -3,6 +3,7 @@ $link: #ec7823; // WILDLABS orange
 $info: #5b985c; // WILDLABS green
 
 @import "theme/_main";
+@import "theme/_features";
 
 // You can add additional styling here
 
@@ -76,19 +77,19 @@ $info: #5b985c; // WILDLABS green
   }
 }
 
-// Species
+// Species (requires @import "theme/_features" above)
 .species {
   // Top content
   .article {
     margin: 2rem auto;
   }
   
-  // Group headers
+  // Group headings
   .features-intro {
     padding-top: 2rem;
     padding-bottom: 1rem;
     
-    // Group buttons
+    // Group navigation
     &:first-child {
       padding-top: 0rem;
       padding-bottom: 0rem;
@@ -99,11 +100,27 @@ $info: #5b985c; // WILDLABS green
     }
   }
 
-  // Species card
+  // Species feature cards
+  $card-width: 250px;
   .feature {
-    flex: 0 0 200px;
+    // Italicize scientific names
     .feature-pre-title {
       font-style: italic;
+    }
+
+    // Cancel @mixin featureDoubleWidth styling
+    // .feature--double-width is not cancelled as it is not applied
+    display: block !important;
+    flex: 0 0 $card-width !important;
+    .feature-img {
+      max-height: auto !important;
+      height: 0 !important;
+      padding-bottom: 60% !important;
+      border-bottom: 1px solid #0000001a !important;
+      border-right: none !important;
+    }
+    >div {
+      flex: initial !important;
     }
   }
 }
