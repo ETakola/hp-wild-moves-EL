@@ -4,7 +4,6 @@ klass: species
 lang-ref: species
 permalink: /species
 title: Species
-height: 40vh
 toc: false
 ---
 
