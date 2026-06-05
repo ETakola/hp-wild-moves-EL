@@ -75,22 +75,22 @@ taxonKey,species,englishName,imageSrc,imageUrl,imageBy,license,numberOfOccurrenc
 2359706,Rutilus rutilus,Common Roach,https://inaturalist-open-data.s3.amazonaws.com/photos/523855041/large.jpg,https://www.inaturalist.org/observations/291170776,michal_michlewicz,cc-by-nc,1037,Fish
 2417495,Ginglymostoma cirratum,Nurse Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/439764980/large.jpeg,https://www.inaturalist.org/observations/246346292,CONANP_Reserva de la Biosfera Banco Chinchorro,cc-by-nc,1035,Sharks & Rays
 2391092,Lichia amia,Leerfish,https://inaturalist-open-data.s3.amazonaws.com/photos/190268220/large.jpg,https://www.inaturalist.org/observations/112637919,Roberto Pillon,cc-by-nc,496,Fish
-5711980,Oncorhynchus clarkii,Coastal Cutthroat Trout,,,,,493,Fish
-4284020,Salvelinus malma,Dolly Varden,,,,,460,Fish
-9245001,Hypanus sabinus,Atlantic Stingray,,,,,388,Sharks & Rays
-2434793,Phoca vitulina,Harbor Seal,,,,,318,Marine mammals
-2418312,Mustelus canis,Dusky Smooth-Hound,,,,,284,Sharks & Rays
-2440605,Globicephala macrorhynchus,Short-finned Pilot Whale,,,,,277,Marine mammals
+5711980,Oncorhynchus clarkii,Coastal Cutthroat Trout,https://inaturalist-open-data.s3.amazonaws.com/photos/5295841/large.jpeg,https://www.inaturalist.org/observations/4408188,Justin Garwood,cc-by-nc,493,Fish
+4284020,Salvelinus malma,Dolly Varden,https://inaturalist-open-data.s3.amazonaws.com/photos/106187399/large.jpg,https://www.inaturalist.org/observations/65925069,Ashley M Bradford,cc-by-nc,460,Fish
+9245001,Hypanus sabinus,Atlantic Stingray,https://inaturalist-open-data.s3.amazonaws.com/photos/111421489/large.jpg,https://www.inaturalist.org/observations/68761309,Dylan Jacques-Fero,cc-by-nc,388,Sharks & Rays
+2434793,Phoca vitulina,Harbor Seal,https://inaturalist-open-data.s3.amazonaws.com/photos/585448573/large.jpg,https://www.inaturalist.org/observations/323544397,zimmwisdom,cc-by-nc,318,Marine mammals
+2418312,Mustelus canis,Dusky Smooth-Hound,https://inaturalist-open-data.s3.amazonaws.com/photos/77336365/large.jpg,https://www.inaturalist.org/observations/48730813,Phil Colarusso,cc-by-nc,284,Sharks & Rays
+2440605,Globicephala macrorhynchus,Short-finned Pilot Whale,https://inaturalist-open-data.s3.amazonaws.com/photos/159806977/large.jpeg,https://www.inaturalist.org/observations/96210120,dnoby,cc-by-nc,277,Marine mammals
 2417983,Carcharhinus brevipinna,Spinner Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/141413830/large.jpg,https://www.inaturalist.org/observations/85898648,Niall Perrins,cc-by-nc,223,Sharks & Rays
-8006460,Anarhichas lupus,Atlantic Wolffish,,,,,120,Fish
-2420446,Amblyraja radiata,Thorny Skate,,,,,104,Sharks & Rays
-5208090,Pomatomus saltatrix,Bluefish,,,,,92,Fish
-2351244,Salvelinus confluentus,Bull Trout,,,,,89,Fish
-2440403,Mesoplodon densirostris,Dense-beaked Whale,,,,,71,Marine mammals
-2415853,Gadus macrocephalus,Pacific Cod,,,,,50,Fish
-2417970,Carcharhinus limbatus,Common Blacktip Shark,,,,,48,Sharks & Rays
-2415893,Microgadus tomcod,Atlantic Tomcod,,,,,42,Fish
-8236498,Petromyzon marinus,Sea Lamprey,,,,,22,Fish
+8006460,Anarhichas lupus,Atlantic Wolffish,https://inaturalist-open-data.s3.amazonaws.com/photos/107915036/large.jpg,https://www.inaturalist.org/observations/66879325,Alex Shure,cc-by-nc,120,Fish
+2420446,Amblyraja radiata,Thorny Skate,https://inaturalist-open-data.s3.amazonaws.com/photos/25578838/large.jpg,https://www.inaturalist.org/observations/16927157,Tatiana Antokhina,cc-by-nc,104,Sharks & Rays
+5208090,Pomatomus saltatrix,Bluefish,https://inaturalist-open-data.s3.amazonaws.com/photos/14722080/large.jpg,https://www.inaturalist.org/observations/10566359,Peter,cc-by-nc,92,Fish
+2351244,Salvelinus confluentus,Bull Trout,https://inaturalist-open-data.s3.amazonaws.com/photos/231323307/large.jpeg,https://www.inaturalist.org/observations/135611166,Jon David Nelson,cc-by-nc,89,Fish
+2440403,Mesoplodon densirostris,Dense-beaked Whale,https://inaturalist-open-data.s3.amazonaws.com/photos/189872487/large.jpg,https://www.inaturalist.org/observations/112415666,Karolle Wall,cc-by-nc,71,Marine mammals
+2415853,Gadus macrocephalus,Pacific Cod,https://inaturalist-open-data.s3.amazonaws.com/photos/340745230/large.jpg,https://www.inaturalist.org/observations/193926226,dpcmiller,cc-by,50,Fish
+2417970,Carcharhinus limbatus,Common Blacktip Shark,https://inaturalist-open-data.s3.amazonaws.com/photos/225162527/large.jpg,https://www.inaturalist.org/observations/132236117,Simon Pierce,cc-by-nc,48,Sharks & Rays
+2415893,Microgadus tomcod,Atlantic Tomcod,https://inaturalist-open-data.s3.amazonaws.com/photos/350861616/large.jpg,https://www.inaturalist.org/observations/199002989,Flore du quartier,cc-by-nc,42,Fish
+8236498,Petromyzon marinus,Sea Lamprey,https://inaturalist-open-data.s3.amazonaws.com/photos/285915486/large.jpeg,https://www.inaturalist.org/observations/165189560,Jill DeVito,cc0,22,Fish
 2382906,Pomadasys commersonnii,Small-spotted Grunter,,,,,20,Fish
 2409370,Parophrys vetulus,English Sole,,,,,14,Fish
 2373980,Thunnus thynnus,Atlantic Bluefin Tuna,,,,,3,Fish
