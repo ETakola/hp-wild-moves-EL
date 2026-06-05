@@ -11,6 +11,16 @@ composition:
 {% assign groupNames = groupedTaxa | map: "name" %}
 
 <section class="features">
+  <div class="features-intro">
+    <div class="feature-content">
+      <div class="feature-text">
+        {% for name in groupNames %}
+          <a class="button" href="#{{ name | downcase }}">{{ name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
   {% for group in groupedTaxa %}
   <div class="features-intro" id="{{ group.name | downcase }}">
     <div class="feature-content">
