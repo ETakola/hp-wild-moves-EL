@@ -7,4 +7,4 @@ title: Especies
 toc: false
 ---
 
-Lista seleccionada de especies con datos de seguimiento en este sitio web (ordenadas por número de registros).
+Lista seleccionada de especies con datos de seguimiento en GBIF (ordenadas por número de registros).

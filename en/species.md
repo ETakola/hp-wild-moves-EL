@@ -7,4 +7,4 @@ title: Species
 toc: false
 ---
 
-Curated list of species with tracking data on this website (ordered by number of occurrences).
+Curated list of species with tracking data on GBIF (ordered by number of occurrences).
