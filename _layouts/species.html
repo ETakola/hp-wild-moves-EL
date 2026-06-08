@@ -6,8 +6,8 @@ composition:
 
 {% assign composition = page.composition | default: layout.composition %}
 {% include composition.html composition=composition %}
-{% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
-{% assign filteredTaxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" | where_exp: "taxon", "taxon.numberOfOccurrences != '0'" %}
+{% assign taxa = site.data.species | sort: "occurrenceCount" | reverse %}
+{% assign filteredTaxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" | where_exp: "taxon", "taxon.occurrenceCount != '0'" %}
 {% assign groupedTaxa = filteredTaxa | group_by: "group" | sort: "name" %}
 {% assign groupNames = groupedTaxa | map: "name" %}
 
@@ -35,7 +35,7 @@ composition:
       <article class="feature" id="{{ taxon.species | strip }}">
         {% assign preTitle = taxon.species %}
         {% assign title = taxon.englishName %}
-        {% assign href = taxon.taxonKey | prepend: './occurrence/search?view=map&taxonKey=' %}
+        {% assign href = taxon.speciesKey | prepend: './occurrence/search?view=map&taxonKey=' %}
         {% assign background = taxon.imageSrc %}
         {% if taxon.imageBy %}
           {% assign imageLicense = 'Image by [' | append: taxon.imageBy | append: '](' | append: taxon.imageUrl | append: ')' %}
