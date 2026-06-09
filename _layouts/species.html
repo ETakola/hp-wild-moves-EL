@@ -7,7 +7,7 @@ composition:
 {% assign composition = page.composition | default: layout.composition %}
 {% include composition.html composition=composition %}
 {% assign taxa = site.data.species | sort: "occurrenceCount" | reverse %}
-{% assign filteredTaxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" | where_exp: "taxon", "taxon.occurrenceCount != '0'" %}
+{% assign filteredTaxa = taxa | where_exp: "taxon", "taxon.occurrenceCount != '0'" %}
 {% assign groupedTaxa = filteredTaxa | group_by: "group" | sort: "name" %}
 {% assign groupNames = groupedTaxa | map: "name" %}
 
@@ -33,8 +33,23 @@ composition:
   <div class="feature-cards has-{{ group.size }}-elements">
     {% for taxon in group.items %}
       <article class="feature" id="{{ taxon.species | strip }}">
+        {% assign iucn = taxon.iucnRedListCategory %}
+        {% case iucn %}
+          {% when "CR" %}
+            {% assign iucn_label = ' <span class="tag iucn-cr">CR</span>' %}
+          {% when "EN" %}
+            {% assign iucn_label = ' <span class="tag iucn-en">EN</span>' %}
+          {% when "VU" %}
+            {% assign iucn_label = ' <span class="tag iucn-vu">VU</span>' %}
+          {% when "NT" %}
+            {% assign iucn_label = ' <span class="tag iucn-nt">NT</span>' %}
+          {% when "LC" %}
+            {% assign iucn_label = ' <span class="tag iucn-lc">LC</span>' %}
+          {% else %}
+            {% assign iucn_label = '' %}
+        {% endcase %}
         {% assign preTitle = taxon.species %}
-        {% assign title = taxon.englishName %}
+        {% assign title = taxon.vernacularNameEn | append: iucn_label %}
         {% assign href = taxon.speciesKey | prepend: './occurrence/search?view=map&taxonKey=' %}
         {% assign background = taxon.imageSrc %}
         {% if taxon.imageBy %}
@@ -42,7 +57,14 @@ composition:
         {% else %}
           {% assign imageLicense = false %}
         {%endif %}
-        {% include blocks/parts/feature.html content=taxon preTitle=preTitle title=title href=href background=background imageLicense=imageLicense %}
+        {% include blocks/parts/feature.html
+          content=taxon
+          preTitle=preTitle
+          title=title
+          href=href
+          background=background
+          imageLicense=imageLicense
+        %}
       </article>
     {% endfor %}
   </div>

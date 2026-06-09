@@ -123,4 +123,29 @@ $info: #5b985c; // WILDLABS green
       flex: initial !important;
     }
   }
+
+  // IUCN red list status
+  .tag {
+    vertical-align: middle;
+  }
+  .iucn-cr {
+    background-color: #bf3f39;
+    color: #f3c3cf;
+  }
+  .iucn-en {
+    background-color: #c36e3e;
+    color: #f6cfa1;
+  }
+  .iucn-vu {
+    background-color: #c59f41;
+    color: #fbfad4;
+  }
+  .iucn-nt {
+    background-color: #2c6667;
+    color: #a5cda0;
+  }
+  .iucn-lc {
+    background-color: #2c6667;
+    color: white;
+  }
 }
