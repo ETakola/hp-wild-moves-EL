@@ -6,8 +6,8 @@ composition:
 
 {% assign composition = page.composition | default: layout.composition %}
 {% include composition.html composition=composition %}
-{% assign taxa = site.data.species | sort: "numberOfOccurrences" | reverse %}
-{% assign filteredTaxa = taxa | where_exp: "taxon", "taxon.imageSrc != nil" | where_exp: "taxon", "taxon.numberOfOccurrences != '0'" %}
+{% assign taxa = site.data.species | sort: "occurrenceCount" | reverse %}
+{% assign filteredTaxa = taxa | where_exp: "taxon", "taxon.vernacularNameEn != nil" | where_exp: "taxon", "taxon.occurrenceCount != '0'" %}
 {% assign groupedTaxa = filteredTaxa | group_by: "group" | sort: "name" %}
 {% assign groupNames = groupedTaxa | map: "name" %}
 
@@ -33,16 +33,38 @@ composition:
   <div class="feature-cards has-{{ group.size }}-elements">
     {% for taxon in group.items %}
       <article class="feature" id="{{ taxon.species | strip }}">
+        {% assign iucn = taxon.iucnRedListCategory %}
+        {% case iucn %}
+          {% when "CR" %}
+            {% assign iucn_label = ' <span class="tag iucn-cr">CR</span>' %}
+          {% when "EN" %}
+            {% assign iucn_label = ' <span class="tag iucn-en">EN</span>' %}
+          {% when "VU" %}
+            {% assign iucn_label = ' <span class="tag iucn-vu">VU</span>' %}
+          {% when "NT" %}
+            {% assign iucn_label = ' <span class="tag iucn-nt">NT</span>' %}
+          {% when "LC" %}
+            {% assign iucn_label = ' <span class="tag iucn-lc">LC</span>' %}
+          {% else %}
+            {% assign iucn_label = '' %}
+        {% endcase %}
         {% assign preTitle = taxon.species %}
-        {% assign title = taxon.englishName %}
-        {% assign href = taxon.taxonKey | prepend: './occurrence/search?view=map&taxonKey=' %}
-        {% assign background = taxon.imageSrc %}
+        {% assign title = taxon.vernacularNameEn | append: iucn_label %}
+        {% assign href = taxon.speciesKey | prepend: './occurrence/search?view=map&taxonKey=' %}
+        {% assign background = taxon.imageSrc | default: '/assets/species/default.png' | relative_url %}
         {% if taxon.imageBy %}
           {% assign imageLicense = 'Image by [' | append: taxon.imageBy | append: '](' | append: taxon.imageUrl | append: ')' %}
         {% else %}
           {% assign imageLicense = false %}
         {%endif %}
-        {% include blocks/parts/feature.html content=taxon preTitle=preTitle title=title href=href background=background imageLicense=imageLicense %}
+        {% include blocks/parts/feature.html
+          content=taxon
+          preTitle=preTitle
+          title=title
+          href=href
+          background=background
+          imageLicense=imageLicense
+        %}
       </article>
     {% endfor %}
   </div>
