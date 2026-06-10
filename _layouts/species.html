@@ -6,8 +6,15 @@ composition:
 
 {% assign composition = page.composition | default: layout.composition %}
 {% include composition.html composition=composition %}
-{% assign taxa = site.data.species | sort: "occurrenceCount" | reverse %}
-{% assign filteredTaxa = taxa | where_exp: "taxon", "taxon.vernacularNameEn != nil" | where_exp: "taxon", "taxon.occurrenceCount != '0'" %}
+{% assign taxa = site.data.species %}
+{% assign filteredTaxa = "" | split: "" %}
+{% for taxon in taxa %}
+  {% assign occurrenceCount = taxon.occurrenceCount | times: 1 %}
+  {% if taxon.vernacularNameEn != nil and occurrenceCount >= 1000 %}
+    {% assign filteredTaxa = filteredTaxa | push: taxon %}
+  {% endif %}
+{% endfor %}
+{% assign filteredTaxa = filteredTaxa | sort: "occurrenceCount" | reverse %}
 {% assign groupedTaxa = filteredTaxa | group_by: "group" | sort: "name" %}
 {% assign groupNames = groupedTaxa | map: "name" %}
 
