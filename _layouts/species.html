@@ -46,20 +46,20 @@ composition:
         {% assign iucn = taxon.iucnRedListCategory %}
         {% case iucn %}
           {% when "CR" %}
-            {% assign iucn_label = ' <span class="tag iucn-cr">CR</span>' %}
+            {% assign iucnLabel = ' <span class="tag iucn-cr">CR</span>' %}
           {% when "EN" %}
-            {% assign iucn_label = ' <span class="tag iucn-en">EN</span>' %}
+            {% assign iucnLabel = ' <span class="tag iucn-en">EN</span>' %}
           {% when "VU" %}
-            {% assign iucn_label = ' <span class="tag iucn-vu">VU</span>' %}
+            {% assign iucnLabel = ' <span class="tag iucn-vu">VU</span>' %}
           {% when "NT" %}
-            {% assign iucn_label = ' <span class="tag iucn-nt">NT</span>' %}
+            {% assign iucnLabel = ' <span class="tag iucn-nt">NT</span>' %}
           {% when "LC" %}
-            {% assign iucn_label = ' <span class="tag iucn-lc">LC</span>' %}
+            {% assign iucnLabel = ' <span class="tag iucn-lc">LC</span>' %}
           {% else %}
-            {% assign iucn_label = '' %}
+            {% assign iucnLabel = '' %}
         {% endcase %}
         {% assign preTitle = taxon.species %}
-        {% assign title = taxon.vernacularNameEn | append: iucn_label %}
+        {% assign title = taxon.vernacularNameEn | append: iucnLabel %}
         {% assign href = taxon.speciesKey | prepend: './occurrence/search?view=map&taxonKey=' %}
         {% assign background = taxon.imageSrc | default: '/assets/species/default.png' | relative_url %}
         {% if taxon.imageBy %}
