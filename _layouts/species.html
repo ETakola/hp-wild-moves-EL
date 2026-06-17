@@ -1,5 +1,8 @@
 ---
 layout: base
+description: >
+  Template for species as feature cards, grouped per speciesGroup.
+  Species are derived from _data/species.csv and filtered on those with vernacularNameEn and occurrenceCount >= 1000.
 composition:
   - type: pageMarkdown
 ---
@@ -58,8 +61,10 @@ composition:
           {% else %}
             {% assign iucnLabel = '' %}
         {% endcase %}
+        {% assign vernacularNameColumn = page.lang | capitalize | prepend: 'vernacularName' %}
+        {% assign vernacularName = taxon[vernacularNameColumn] | default: taxon.vernacularNameEn %}
         {% assign preTitle = taxon.species %}
-        {% assign title = taxon.vernacularNameEn | append: iucnLabel %}
+        {% assign title = vernacularName | append: iucnLabel %}
         {% assign href = taxon.speciesKey | prepend: './occurrence/search?view=map&taxonKey=' %}
         {% assign background = taxon.imageSrc | default: '/assets/species/default.png' | relative_url %}
         {% if taxon.imageBy %}
