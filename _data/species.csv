@@ -1,4 +1,4 @@
-speciesKey,species,occurrenceCount,vernacularNameEn,imageSrc,imageUrl,imageBy,group,iucnRedListCategory
+speciesKey,species,occurrenceCount,vernacularNameEn,imageSrc,imageUrl,imageBy,speciesGroup,iucnRedListCategory
 2481174,Larus fuscus,3677126,Lesser Black-backed Gull,https://inaturalist-open-data.s3.amazonaws.com/photos/111114484/medium.jpeg,https://www.inaturalist.org/observations/68596025,Andrew Bazdyrev,Birds,LC
 2481139,Larus argentatus,2076315,European Herring Gull,https://inaturalist-open-data.s3.amazonaws.com/photos/636514055/medium.jpg,https://www.inaturalist.org/observations/348963009,Jason Thompson,Birds,LC
 8084280,Gadus morhua,1738617,Atlantic Cod,https://inaturalist-open-data.s3.amazonaws.com/photos/541436632/medium.jpg,https://www.inaturalist.org/observations/300496831,Kim Nesbitt,Bony fish,VU

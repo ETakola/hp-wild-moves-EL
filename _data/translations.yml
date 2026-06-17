@@ -39,3 +39,27 @@ contentTypes:
   Literature:
     en: "Literature"
     es: "Literatura"
+
+# Used by species page
+speciesGroups:
+  Birds:
+    en: "Birds"
+    es: "Aves"
+  Bony fish:
+    en: "Bony fish"
+    es: "Peces óseos"
+  Invertebrates:
+    en: "Invertebrates"
+    es: "Invertebrados"
+  Marine mammals:
+    en: "Marine mammals"
+    es: "Mamíferos marinos"
+  Reptiles:
+    en: "Reptiles"
+    es: "Reptiles"
+  Sharks & Rays:
+    en: "Sharks & Rays"
+    es: "Tiburones y rayas"
+  Terrestrial mammals:
+    en: "Terrestrial mammals"
+    es: "Mamíferos terrestres"

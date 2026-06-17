@@ -15,7 +15,7 @@ composition:
   {% endif %}
 {% endfor %}
 {% assign filteredTaxa = filteredTaxa | sort: "occurrenceCount" | reverse %}
-{% assign groupedTaxa = filteredTaxa | group_by: "group" | sort: "name" %}
+{% assign groupedTaxa = filteredTaxa | group_by: "speciesGroup" | sort: "name" %}
 {% assign groupNames = groupedTaxa | map: "name" %}
 
 <section class="features">
@@ -23,7 +23,7 @@ composition:
     <div class="feature-content">
       <div class="feature-text">
         {% for name in groupNames %}
-          <a class="button" href="#{{ name | downcase }}">{{ name }}</a>
+          <a class="button" href="#{{ name | downcase }}">{{ site.data.translations.speciesGroups[name][page.lang] | default: name }}</a>
         {% endfor %}
       </div>
     </div>
@@ -33,7 +33,10 @@ composition:
   <div class="features-intro" id="{{ group.name | downcase }}">
     <div class="feature-content">
       <div class="feature-text">
-        <h3 class="feature-title">{{ group.name }} <span class="g-text-slate-400">({{ group.size }})</span></h3>
+        <h3 class="feature-title">
+          {{ site.data.translations.speciesGroups[group.name][page.lang] | default: group.name }}
+          <span class="g-text-slate-400">({{ group.size }})</span>
+        </h3>
       </div>
     </div>
   </div>
