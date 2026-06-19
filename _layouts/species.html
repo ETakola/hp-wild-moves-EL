@@ -65,13 +65,15 @@ composition:
         {% assign vernacularName = taxon[vernacularNameColumn] | default: taxon.vernacularNameEn %}
         {% assign preTitle = taxon.species %}
         {% assign title = vernacularName | append: iucnLabel %}
-        {% assign href = taxon.speciesKey | prepend: './occurrence/search?view=map&taxonKey=' %}
+        {% assign dashboardHash = 'W1t7ImlkIjoicDhlcW4iLCJwIjp7fSwidHJhbnNsYXRpb24iOiJzZWFyY2gudGFicy5tYXAiLCJyIjp0cnVlLCJ0IjoibWFwIn1dLFt7ImlkIjoid2JoaHEiLCJwIjp7fSwidCI6ImRhdGFzZXRLZXkifSx7ImlkIjoiM3JkNmkiLCJwIjp7InZpZXciOiJUQUJMRSJ9LCJ0cmFuc2xhdGlvbiI6ImRhc2hib2FyZC5vcmdhbmlzbUlkIiwidCI6Im9yZ2FuaXNtSWQifV1d' %}
+        {% assign href = './occurrence/search?view=dashboard&taxonKey=' | append: taxon.speciesKey | append: '&layout=' | append: dashboardHash %}
         {% assign background = taxon.imageSrc | default: '/assets/species/default.png' | relative_url %}
         {% if taxon.imageBy %}
           {% assign imageLicense = 'Image by [' | append: taxon.imageBy | append: '](' | append: taxon.imageUrl | append: ')' %}
         {% else %}
           {% assign imageLicense = false %}
         {%endif %}
+
         {% include blocks/parts/feature.html
           content=taxon
           preTitle=preTitle
