@@ -15,7 +15,7 @@ composition:
   - type: stats
     inlineData:
       features:
-        - title: ~350
+        - title: <span data-ajax-url="https://api.gbif.org/v1/dataset/search?networkKey=ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b">~350</span>
           description: Σύνολα δεδομένων
           href: /el/dataset/search
         - title: ~70
