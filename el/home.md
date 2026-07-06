@@ -21,14 +21,14 @@ composition:
         - title: <span data-ajax-path="data.occurrenceSearch.cardinality.speciesKey" data-ajax-url="https://graphql.gbif.org/graphql?query=query{occurrenceSearch(predicate:{key:%22networkKey%22,type:equals,value:%22ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b%22}){_predicate%20cardinality{speciesKey}}}">~70</span>
           description: Είδη
           href: /el/species
-        - title: ~15,000,000
+        - title: <span data-ajax-url="https://api.gbif.org/v1/occurrence/search?networkKey=ab013f3a-3c00-42cb-9fdb-cb5f4ba20a4b&limit=0">~15,000,000</span>
           description: Καταγραφές
           href: /el/occurrence/search
   - type: split
     inlineData:
       title: Αναζήτηση δεδομένων
       description: >
-        Το Wild Moves σας βοηθά να ανακαλύψετε σύνολα δεδομένων παρακολούθησης ζώων και βιοκαταγραφής που έχουν δημοσιευτεί στο [GBIF](https://www.gbif.org).
+        Το Wild Moves σας βοηθά να ανακαλύψετε δεδομένα παρακολούθησης ζώων και βιοκαταγραφής που έχουν δημοσιευτεί στο [GBIF](https://www.gbif.org).
 
         Αναζητήστε μεταδεδομένα για να βρείτε σύνολα δεδομένων που σας ενδιαφέρουν. Ή εξερευνήστε τα δεδομένα καταγραφών που περιέχουν συλλογικά αυτά τα σύνολα δεδομένων.
       cta:
@@ -49,12 +49,12 @@ composition:
           href: https://www.gbif.org/become-a-publisher
       background: /assets/images/lbbg-73826.jpg
       imageLicense: >
-        Ασημόγλαρος μελανόραχος με ετικέτα GPS στο Βέλγιο. Εικόνα: Misjel Decleer/VLIZ.
+        Μελανόγλαρος με ετικέτα GPS στο Βέλγιο. Εικόνα: Misjel Decleer/VLIZ.
       reverse: true
   - type: floatingText
     inlineData:
       klass: hp
-      title: Σας ενδιαφέρουν τα δεδομένα από κάμερες παγίδευσης;
+      title: Σας ενδιαφέρουν τα δεδομένα από κάμερες παρακολούθησης πανίδας;
       description: >
         [Επισκεφθείτε το Wild Album](https://album.wildlabs.net){:.button}
       hasWhiteText: true
