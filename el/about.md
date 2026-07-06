@@ -5,7 +5,7 @@ permalink: /el/about
 title: Σχετικά με το Wild Moves
 background: /assets/images/otn-receivers-boat.jpg
 imageLicense: >
-  Ακουστικοί δέκτες έτοιμοι να αναπτυχθούν στα ανοικτά των ακτών της Νέας Σκωτίας, στον Καναδά. Εικόνα: Ocean Tracking Network.
+  Ακουστικοί δέκτες έτοιμοι να ποντιστούν στα ανοικτά των ακτών της Νέας Σκωτίας, στον Καναδά. Εικόνα: Ocean Tracking Network.
 height: 60vh
 parallax: true
 toc: true
