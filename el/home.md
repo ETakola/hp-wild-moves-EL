@@ -49,7 +49,7 @@ composition:
           href: https://www.gbif.org/become-a-publisher
       background: /assets/images/lbbg-73826.jpg
       imageLicense: >
-        Μελανόγλαρος με ετικέτα GPS στο Βέλγιο. Εικόνα: Misjel Decleer/VLIZ.
+        Μελανόγλαρος με συσκευή γεωεντοπισμού στο Βέλγιο. Εικόνα: Misjel Decleer/VLIZ.
       reverse: true
   - type: floatingText
     inlineData:
